@@ -2,10 +2,10 @@ angular.module('appLab', ['ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateURL: 'inicio.html'
+        templateUrl: 'inicio.html'
       })
       .when('/oli', {
-        templateURL: 'prueba.html'
+        templateUrl: 'prueba.html'
       })
       .otherwise({ redirectTo: '/' })
   })
