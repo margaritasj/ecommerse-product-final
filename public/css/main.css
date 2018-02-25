@@ -1,3 +1,14 @@
+* {
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.p-btn {
+margin: 0 1rem;
+}
+/*
 body {
   background-image: url('..//assets/images/fondo.jpg');
   background-attachment: fixed;
@@ -12,4 +23,4 @@ img {
  padding: 50px;
  background-color: white;
  border-radius: 50px;
-}
+}*/
