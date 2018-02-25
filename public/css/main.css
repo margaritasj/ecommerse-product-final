@@ -8,19 +8,11 @@
 .p-btn {
 margin: 0 1rem;
 }
-/*
-body {
-  background-image: url('..//assets/images/fondo.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+
+.w-70 {
+  width: 72%;
 }
 
-img {
- padding: 50px;
- background-color: white;
- border-radius: 50px;
-}*/
+.bg-pink {
+  background-color: #fadad4;
+}
