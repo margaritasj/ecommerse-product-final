@@ -6,6 +6,10 @@ app.config(function ($routeProvider) {
       .when('/', {
         templateUrl: '../app/views/home.html'
       })
+      .when('/categories', {
+        templateUrl: '../app/views/categorie.html',
+        controller: 'categorie'
+      })
       .when('/products', {
         templateUrl: '../app/views/products.html',
         controller: 'product'
