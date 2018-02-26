@@ -1,19 +1,17 @@
-var productModel = ( function(){
-
-	return{
-
-		searchApi : function () {
-			/* Metodo Ajax (es configurado a través de un objeto,) -- 3 principales parametros*/
-			console.log('De aqui va a buscar al API');
-			/* $.ajax({
-				type: 'GET', // especifica si será una petición POST o GET
-				url: 'https://api.mercadolibre.com/categories/MPE1430', // la URL para la petición
-				success: function (res) {
-					console.log(res);
-				},
-			}); */
+// factory es una funcionalidad de angular que mas se adapta para usar varias funciones de una sola entidad
+app.factory("productModel", function ($http, $q) {
+	$http.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8';
+    return {
+        searchApi: function () {
+            var deferred = $q.defer();
+            $http.get('https://api.mercadolibre.com/categories/MPE1430')
+                .then(function (response) {
+                    deferred.resolve(response.data);
+                })
+                .catch(function (response) {
+                    deferred.reject(response);
+                });
+            return deferred.promise; // Retorna sea datisfactorio o erroneo
 		}
-		
-	}
-
-} )();
+    }
+});
