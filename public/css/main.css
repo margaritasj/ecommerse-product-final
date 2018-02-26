@@ -8,6 +8,9 @@
 .p-btn {
 margin: 0 1rem;
 }
+.p-card {
+  margin: 1rem 0;
+  }
 
 .w-70 {
   width: 70%;
@@ -27,4 +30,8 @@ margin: 0 1rem;
 
 .text-categorie-a {
   font-size: 0.75rem !important;
+}
+
+.black-text {
+  color: black;
 }
