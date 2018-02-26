@@ -7,7 +7,7 @@ app.config(function ($routeProvider) {
         templateUrl: '../app/views/home.html'
       })
       .when('/categories', {
-        templateUrl: '../app/views/categorie.html',
+        templateUrl: '../app/views/categories.html',
         controller: 'categorie'
       })
       .when('/products', {
