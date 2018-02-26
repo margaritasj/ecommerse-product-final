@@ -10,8 +10,11 @@
       </nav>
       <div class="collapse" id="navbarToggleExternalContent{{key}}">
         <div class="bg-pink text-categorie p-4">
-          <h4 class="text-white">Collapsed content</h4>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
+          <ul>
+            <li ng-repeat="p in categories[ cat.id ].list.results">
+              <a class="text-categorie-a" href="javascript:;">{{ p.title }}</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

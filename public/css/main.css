@@ -18,9 +18,13 @@ margin: 0 1rem;
 }
 
 .text-categorie {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 .btn-size {
   width: 25rem;
+}
+
+.text-categorie-a {
+  font-size: 0.75rem !important;
 }
