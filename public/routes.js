@@ -4,8 +4,8 @@ angular.module('appLab', ['ngRoute'])
       .when('/', {
         templateUrl: '../app/views/home.html'
       })
-      .when('/productos', {
-        templateUrl: '../app/views/products.html'
+      .when('/products', {
+        templateUrl: '../app/views/products.html',
       })
       .otherwise({ redirectTo: '/' })
   })
