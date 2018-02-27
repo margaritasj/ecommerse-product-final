@@ -1,25 +1,38 @@
-# E-commerce
+# E-commerce COTHES
 
 * **Track:** _Especialización Front-end_
 * **Curso:** _CONSTRUYE UNA SINGLE PAGE APP (SPA) MULTI-USUARIO CONSUMIENDO DATA REMOTA_
 * **Unidad:** _Producto final_
+* **Desarrolladoras:** _Dayam Llerema y Margarita Sutta._
 
 ***
 
-## Flujo de trabajo
+E-commerce COTHES, es una app web basado bajo los principios de SPA (Single page aplication). Para ello se aplicaron conceptos nuevos en la cuales detallaremos mas a delante.
 
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
+ ![vista1](public/assets/images/screen-home.png)
+ ![vista2](public/assets/images/screen-categories.png)
+  ![vista1](public/assets/images/screen-products.png)
+***
 
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
+## Requisitos
 
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/freelancer.git
-   ```
+El reto consiste en incluir incluir lo siguiente:
 
-3. Cuando hayas terminado tu producto, envía un Pull Request a este repositorio
-   (puedes solicitar apoyo de tus profes para este paso).
+1. `Templating` son las vistas que se encuentran en la carpeta views.
+2. `Routing (URLs)` se genero un archivo routes.js.
+3. `DOM & Event Handling (State)`.
+4. `Patrón de arquitectura de software (MV*)` - Modelo/Vista/Controlador.
 
-> Nota: No olvides que es una buena práctica describir tu proyecto en este
-> archivo `README.md` y también desplegar tu web a Github Pages :smiley:.
+***
+
+## Herramientas a utilizar
+
+1. HTML 5
+2. CSS3
+3. Bootstrap
+4. Javascript
+5. Angular 1.6.9
+6. API Mercado libre - sin generar token.
+7. API de Paypal - para pasarela de pagos
+
+***
