@@ -1,6 +1,7 @@
 // controller apunta a app
 // $scope -> variable intermediaria entre el js y el front
-app.controller('categorie', ['$scope', 'productModel', function ($scope, productModel) {
+app.controller('categorie', ['$scope', '$window', 'productModel', function ($scope, $window, productModel) {
+	
 	productModel.searchApi().then(function (data) {
 
 		$scope.categories = data.children_categories;
@@ -31,6 +32,27 @@ app.controller('categorie', ['$scope', 'productModel', function ($scope, product
 		$scope.modalQuantity = productChoose.available_quantity;
 		console.log( productChoose );
 
+	}
+
+	$scope.openCheckout = function(amount, currency, title)
+	{
+		var handler = $window.StripeCheckout.configure({
+			key: 'pk_test_2XoNQ2n7sWY7FtW4LAWL8pqF',
+				locale: 'es',
+				currency: currency,
+				token: function (token) {
+				// You can access the token ID with `token.id`.
+				// Get the token ID to your server-side code for use.
+
+				alert("Pagado !");
+			}
+		});
+
+		handler.open({
+			name: 'Ecommerce',
+			description: title,
+			amount: amount * 100
+		});
 	}
 
 }]);

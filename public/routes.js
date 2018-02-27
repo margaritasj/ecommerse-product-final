@@ -4,11 +4,14 @@ var app = angular.module('appLab', ['ngRoute', 'ngAnimate']);
 app.config(function ($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: '../app/views/home.html'
+		templateUrl: '../app/views/home.html'
     })
     .when('/categories', {
-      templateUrl: '../app/views/categories.html',
-      controller: 'categorie'
+		templateUrl: '../app/views/categories.html',
+		controller: 'categorie'
+    })
+    .when('/checkout', {
+    	
     })
     .otherwise({ redirectTo: '/' })
 })

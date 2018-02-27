@@ -11,7 +11,7 @@ E-commerce COTHES, es una app web basado bajo los principios de SPA (Single page
 
  ![vista1](public/assets/images/screen-home.png)
  ![vista2](public/assets/images/screen-categories.png)
-  ![vista1](public/assets/images/screen-products.png)
+ ![vista1](public/assets/images/screen-products.png)
 ***
 
 ## Requisitos
