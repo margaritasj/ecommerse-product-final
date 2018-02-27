@@ -1,22 +1,26 @@
 * {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: white;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .p-btn {
-margin: 0 1rem;
+  margin: 0 1rem;
 }
 .p-card {
   margin: 1rem 0;
-  }
+}
 
 .w-70 {
   width: 70%;
 }
 
 .bg-pink {
+  background-color: #fadad4;
+}
+
+.bg-white2 {
   background-color: #fadad4;
 }
 
@@ -34,4 +38,82 @@ margin: 0 1rem;
 
 .black-text {
   color: black;
+}
+
+li {
+  /* list-style: none; */
+  line-height: 1.2;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 1.5em;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 999;
+}
+
+.footer:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+  height: 10em;
+}
+
+.footer #container {
+  margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: rgb(107, 107, 107);
+}
+
+.footer #cont {
+  position: relative;
+  top: -45px;
+  right: 190px;
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.footer_center {
+  width: 500px;
+  float: left;
+  text-align: center;
+}
+
+.footer h3 {
+  font-family: "Helvetica";
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 70px;
+  margin-left: 40px;
+}
+
+.size-img {
+  width: 0px;
+  margin: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+  * {
+    font-size: 1.1rem;
+  }
+
+  .img-categorie {
+    height: 10rem;
+  }
 }

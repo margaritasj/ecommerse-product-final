@@ -1,27 +1,31 @@
-<div class="col-12">
-  <div class="pos-f-t col-4" ng-repeat="(key, cat) in categories" style="float: left" ng-if="categories[ cat.id ].picture != null">
+<div class="container-fluid">
+  <div class="row">
     <div class="col-12">
-      <nav class="navbar navbar-light">
-        <button class="navbar-toggler text-categorie btn-size bg-pink" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent{{key}}"
-          aria-controls="navbarToggleExternalContent{{key}}" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-shopping-bag"></i> {{ cat.name }} ({{ cat.total_items_in_this_category }})
-        </button>
-      </nav>
-      <div class="collapse" id="navbarToggleExternalContent{{key}}">
-        <div class="bg-pink text-categorie p-4">
-          <ul>
-            <li ng-repeat="p in categories[ cat.id ].list.results">
-              <a class="text-categorie-a" data-toggle="modal" data-target="#exampleModalCenter" href="javascript:;">{{ p.title }}</a>
-            </li>
-          </ul>
+      <div class="pos-f-t col-12 col-md-4" ng-repeat="(key, cat) in categories" style="float: left" ng-if="categories[ cat.id ].picture != null">
+        <nav class="navbar navbar-light">
+          <button class="navbar-toggler text-categorie btn-size bg-pink" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent{{key}}"
+            aria-controls="navbarToggleExternalContent{{key}}" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-shopping-bag"></i> {{ cat.name }}
+          </button>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent{{key}}">
+          <div class="bg-pink text-categorie">
+            <ul>
+              <li ng-repeat="(key, p) in categories[ cat.id ].list.results">
+                <a class="text-categorie-a" data-toggle="modal" data-target="#exampleModalCenter" 
+                href="javascript:;" ng-click="viewProduct(cat, key)">{{ p.title }}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <img ng-src="{{ categories[ cat.id ].picture }}" height="120rem" class="img-categorie">
         </div>
       </div>
     </div>
-    <div class="col-12 text-center">
-      <img ng-src="{{ categories[ cat.id ].picture }}" height="300px">
-    </div>
   </div>
 </div>
+
 
 
 <!-- Modal -->
@@ -29,20 +33,19 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header bg-dark">
-        <h5 class="modal-title white-text" id="exampleModalLongTitle">Hola{{}}</h5>
+        <h5 class="modal-title white-text" id="exampleModalLongTitle">{{ modalTitle }}</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <i class="fas fa-times"></i>
         </button>
       </div>
-      <div class="modal-body">
-        <div>
-          <img ng-src="{{ }}" height="300px">
+      <div class="modal-body row">
+        <div class="black-text col-4">
+          <img ng-src="{{ modalImg }}" height="150px">
         </div>
-        <hr>
-        <div class="black-text">
-          <p class="black-text">precio</p>
-          <p class="black-text">moneda</p>
-          <p class="black-text">cantidad</p>
+        <div class="black-text col-8">
+          <p class="black-text">Precio: S/ {{ modalPrice }} | {{ modalCondition }}</p>
+          <p class="black-text">Moneda: {{ modalCurrency }}</p>
+          <p class="black-text">Cantidad: Quedan {{ modalQuantity }} unidades de este producto.</p>
         </div>
       </div>
       <div class="modal-footer bg-dark">
