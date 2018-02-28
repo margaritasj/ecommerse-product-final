@@ -108,6 +108,10 @@ li {
   margin: 10px;
 }
 
+.i-resize {
+  font-size: 2rem;
+}
+
 @media only screen and (min-width: 992px) {
   * {
     font-size: 1.1rem;

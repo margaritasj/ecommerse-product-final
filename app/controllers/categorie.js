@@ -37,7 +37,7 @@ app.controller('categorie', ['$scope', '$window', 'productModel', function ($sco
 	$scope.openCheckout = function(amount, currency, title)
 	{
 		var handler = $window.StripeCheckout.configure({
-			key: 'pk_test_2XoNQ2n7sWY7FtW4LAWL8pqF',
+			key: 'pk_test_NLQZrKZrCV2k1VKrsV2ZmfFh',
 				locale: 'es',
 				currency: currency,
 				token: function (token) {
