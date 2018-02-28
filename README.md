@@ -1,12 +1,5 @@
 # E-commerce COTHES
 
-* **Track:** _Especialización Front-end_
-* **Curso:** _CONSTRUYE UNA SINGLE PAGE APP (SPA) MULTI-USUARIO CONSUMIENDO DATA REMOTA_
-* **Unidad:** _Producto final_
-* **Desarrolladoras:** _Dayam Llerema y Margarita Sutta._
-
-***
-
 E-commerce COTHES, es una app web basado bajo los principios de SPA (Single page aplication). Para ello se aplicaron conceptos nuevos en la cuales detallaremos mas a delante.
 
 > Para el testeo de pago con stripe se ingresa los siguientes datos:
@@ -50,3 +43,8 @@ NUMBER | BRAND
 8. API de Stripe
 
 ***
+
+* **Track:** _Especialización Front-end_
+* **Curso:** _CONSTRUYE UNA SINGLE PAGE APP (SPA) MULTI-USUARIO CONSUMIENDO DATA REMOTA_
+* **Unidad:** _Producto final_
+* **Desarrolladoras:** _Dayam Llerema y Margarita Sutta._
