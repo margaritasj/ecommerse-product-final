@@ -1,12 +1,11 @@
 # E-commerce COTHES
-
 E-commerce COTHES, es una app web basado bajo los principios de SPA (Single page aplication). Para ello se aplicaron conceptos nuevos en la cuales detallaremos mas a delante.
 
-> Para el testeo de pago con stripe se ingresa los siguientes datos:
-
-  ![vista1](public/assets/images/screen-home.png)
   ![vista2](public/assets/images/screen-categories.png)
-  ![vista3](public/assets/images/screen-products.png)
+
+## Desarrollado para 
+[Laboratoria](http://laboratoria.la)
+
 ***
 
 ## Requisitos
@@ -18,7 +17,10 @@ El reto consiste en incluir incluir lo siguiente:
 3. `DOM & Event Handling (State)`.
 4. `Patrón de arquitectura de software (MV*)` - Modelo/Vista/Controlador.
 5. `API de Mercado Libre` para obtener productos.
-6. `API de Paypal* o Stripe**` para pasarelas de pago. 
+6. `API de Paypal* o Stripe**` para pasarelas de pago.
+
+
+  ![vista3](public/assets/images/screen-products.png)
 
 > ** Para el testing de la pasarela de pago con **STRIPE** utiliza los siguientes datos.
 
