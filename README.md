@@ -1,7 +1,7 @@
 # E-commerce COTHES
 E-commerce COTHES, es una app web basado bajo los principios de SPA (Single page aplication). Para ello se aplicaron conceptos nuevos en la cuales detallaremos mas a delante.
 
-  ![vista2](public/assets/images/screen-categories.png)
+![vista2](https://github.com/margaritasj/ecommerse-product-final/blob/master/public/assets/images/screen-home.png)
 
 ## Desarrollado para 
 [Laboratoria](http://laboratoria.la)
